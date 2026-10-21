@@ -1,0 +1,36 @@
+{
+  "components": [
+    {
+      "text": "### Manager Leave Approval\nPlease review the leave request details and indicate your decision below.",
+      "type": "text",
+      "id": "Field_Header"
+    },
+    {
+      "label": "Approve this request",
+      "type": "checkbox",
+      "id": "Field_Approved",
+      "key": "approved",
+      "description": "Check to approve, uncheck to reject",
+      "validate": {
+        "required": false
+      }
+    },
+    {
+      "label": "Comment",
+      "type": "textarea",
+      "id": "Field_ManagerComment",
+      "key": "managerComment",
+      "description": "Optional notes or reason for approval / rejection",
+      "validate": {
+        "required": false
+      }
+    }
+  ],
+  "type": "default",
+  "id": "leave-approval",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "schemaVersion": 16
+}
